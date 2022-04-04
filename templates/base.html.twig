@@ -33,7 +33,7 @@
 						<a class="nav-link active" aria-current="page" href="/home">Accueil</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/categorie">Catégories</a>
+						<a class="nav-link" href="/profile/categorie">Catégories</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/article">Articles</a>
@@ -63,9 +63,11 @@
 						</span>
 
 					{% endif %}
-					<li class="nav-item">
-						<a class="nav-link" href="{{ path('app_logout') }}">Déconnexion</a>
-					</li>
+					{% if app.user %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{ path('app_logout') }}">Déconnexion</a>
+						</li>
+					{% endif %}
 
 
 				</ul>

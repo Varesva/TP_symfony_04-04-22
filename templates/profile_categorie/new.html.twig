@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Categorie
+{% block title %}New Categorie
 {% endblock %}
 
 {% block body %}
@@ -19,13 +19,11 @@
 
 	<div class="example-wrapper">
 
-		<h1>Modifier les Categories</h1>
-
-		{{ include('categorie/_form.html.twig', {'button_label': 'Update'}) }}
-
-		<a href="{{ path('app_categorie_index') }}">Retour à la liste des articles</a>
+		<h1>Créer une nouvelle catégorie</h1>
 
 
-		{{ include('categorie/_delete_form.html.twig') }}
+		{{ include('profile_categorie/_form.html.twig') }}
+
+		<a href="{{ path('app_profile_categorie_index') }}">Retour à la liste des articles</a>
 	</div>
 {% endblock %}
