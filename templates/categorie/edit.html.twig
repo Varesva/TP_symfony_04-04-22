@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Article
+{% block title %}Edit Categorie
 {% endblock %}
 
 {% block body %}
@@ -19,11 +19,13 @@
 
 	<div class="example-wrapper">
 
-		<h1>Créer un nouvel article
-		</h1>
+		<h1>Modifier les Categories</h1>
 
-		{{ include('article/_form.html.twig') }}
+		{{ include('categorie/_form.html.twig', {'button_label': 'Update'}) }}
 
-		<a href="{{ path('app_article_index') }}">Retour à la liste des articles</a>
+		<a href="{{ path('app_categorie_index') }}">Retour à la liste des articles</a>
+
+
+		{{ include('categorie/_delete_form.html.twig') }}
 	</div>
 {% endblock %}

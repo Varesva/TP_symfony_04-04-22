@@ -29,4 +29,11 @@ class NewsletterController extends AbstractController
             ]);
         }
     }
+    // public function Pag_name(): Response
+    // {
+    //     $nom_page = "Newsletter";
+    //     return $this->render('newsletter/index.html.twig', [
+    //         'page_name' => $nom_page,
+    //     ]);
+    // }
 }

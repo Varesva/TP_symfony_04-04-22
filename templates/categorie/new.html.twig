@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Article
+{% block title %}New Categorie
 {% endblock %}
 
 {% block body %}
@@ -19,11 +19,12 @@
 
 	<div class="example-wrapper">
 
-		<h1>Créer un nouvel article
-		</h1>
+		<h1>Créer une nouvelle catégorie</h1>
 
-		{{ include('article/_form.html.twig') }}
+		{{ include('categorie/_form.html.twig') }}
 
-		<a href="{{ path('app_article_index') }}">Retour à la liste des articles</a>
+		<a href="{{ path('app_categorie_index') }}">Retour à la liste des articles</a>
+
+
 	</div>
 {% endblock %}
